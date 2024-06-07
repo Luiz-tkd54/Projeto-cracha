@@ -1,0 +1,123 @@
+html{
+    background-color: rgb(92, 89, 89);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 1000px;
+}
+
+:root{
+    --gold-essential:#b1904e;
+    --textcolor: #f0dcdc;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.double-card{
+    width: 250px;
+    height: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+    
+}
+ 
+.double-card:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.double-card .card-back{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+   
+}
+
+
+/* frente do crachá */
+
+.front-card{ 
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: 400px;
+    box-shadow: 2px 2px 5px #000 ;
+    position: absolute;
+}
+
+.logo-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px ;
+    padding: 20px 50px;
+}
+
+.card-info h2{
+    margin: 0;
+    color: var(--gold-essential);
+    padding: 10px 30px;
+    font-size: 20px;
+    text-indent: 30px;
+}
+
+.card-info h3{
+    margin: 0;
+    color: var(--textcolor);
+    padding: 60px 80px ;
+}
+
+/* verso do crachá */
+
+.card-back{
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: 400px;
+    box-shadow: 2px 2px 5px #000 ;
+    position: absolute;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px ;
+    padding: 30px 100px;
+}
+
+.card-info2 h2{
+    margin: 0;
+    color: var(--gold-essential);
+    padding: 10px 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-info2 h3{
+    color: var(--gold-essential);
+    margin: 0;
+    padding: 20px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+p{
+    color: var(--textcolor);
+    text-align: center;
+}
+
+.line{
+    width: 40px;
+}
